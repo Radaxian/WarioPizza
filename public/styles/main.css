@@ -1,0 +1,240 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(227, 254, 238);
+    text-shadow: .2em .1em .3em rgb(68, 247, 164);
+}
+
+a:hover {
+    text-shadow: .2em .1em .3em rgb(254, 25, 219);  
+
+}
+
+body {
+    margin: 0;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 100%;
+    background-color: rgb(5, 11, 19);
+    color: white;
+}
+
+footer {
+    color: rgb(227, 254, 238);
+    border-top: 2px solid white;
+    text-shadow: .2em .1em .3em rgb(68, 247, 164);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    text-shadow: .2em .1em .3em rgb(68, 247, 164);
+    color: rgb(227, 254, 238);
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+p {
+    margin: 0;
+}
+
+section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 60em;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: .5rem;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.basketItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.errors {
+    color: white;
+    text-shadow: .2em .1em .3em rgb(68, 247, 164);
+}
+
+.pizzaDetails {
+    width: 100%;
+    margin-top: .5rem;
+}
+.pizzaDetails h2 {
+    text-align: center;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+#basket {
+    border: 2px solid white;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#basket h3 {
+    text-align: center;
+}
+
+#basket li {
+    margin-bottom: 1rem;
+}
+
+#basket button {
+    align-self: center;
+}
+
+#menu img {
+    width: 100%;
+    max-height: 70%;
+}
+
+.pizza {
+    border-radius: 6px;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+#pizzas li {
+    display: flex;
+    justify-content: space-between;
+    padding-right: .8rem;
+}
+
+#discount {
+    color: white;
+    text-shadow: .2em .1em .3em rgb(247, 72, 221);
+}
+
+
+#thankyouMessage {
+    color: white;
+    text-shadow: .2em .1em .3em rgb(68, 247, 164);
+}
+
+li {
+	display: flex;
+	flex-wrap: wrap;
+}
+label {
+	flex: 0 0 8em;
+	margin-right: 1em;
+	margin-bottom: 4px;
+	color: white;
+}
+
+input {
+    flex: 1 1 20em;
+    color: rgb(68, 247, 164);
+    background-color: rgb(5, 11, 19);
+}
+
+
+input.textinput {
+	height: 2em;
+	border: 1px solid rgba(0,0,0,.3);
+	padding-left: 6px;
+	font-family: inherit;
+    font-size: .875em;
+}
+
+select {
+	font-size: inherit; 
+	
+}
+button {
+	width: 10em;
+	height: 2em;
+    border: 1px solid white;
+    background-color: rgb(5, 11, 19);
+    color: white;
+	border-radius: 4px;
+	font-size: inherit;
+}
+
+button:hover {
+    background-color: rgb(68, 247, 164);
+    color: black;
+    cursor: pointer;
+}
+
+/* ==================================
+   ========   Media Queries =========
+   ==================================
+*/
+
+@media screen and (min-width:600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        column-gap: 20px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    #pizzas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+}
